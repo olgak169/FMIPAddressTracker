@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="leaflet.css" />
+        <script src="leaflet.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>FM IP Address Tracking</title>
+    </head>
+    <body>
+        <header>
+            <h1>IP Address Tracker</h1>
+            <form id="form">
+                <span id="error">Nothing found</span>
+                <input
+                    type="search"
+                    name="ip-input"
+                    id="ip-input"
+                    placeholder="Seach for any IP adress or domain"
+                    autocomplete="off"
+                /><button type="submit"></button>
+            </form>
+        </header>
+        <div class="outputs-info">
+            <ul class="info">
+                <li>
+                    <p class="info-title">IP Address</p>
+                    <span id="ip-address"></span>
+                </li>
+                <li>
+                    <p class="info-title">Location</p>
+                    <span id="location"></span>
+                </li>
+                <li>
+                    <p class="info-title">Timezone</p>
+                    <span id="timezone"></span>
+                </li>
+                <li>
+                    <p class="info-title">ISP</p>
+                    <span id="isp"></span>
+                </li>
+            </ul>
+        </div>
+        <main id="map"></main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
